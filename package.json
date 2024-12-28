@@ -7,10 +7,11 @@
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
     "build": "npm-run-all build:*",
-    "start": "NODE_ENV=production node build/index.js",
+    "start": "node build/index.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.17.3",
     "framer-motion": "^6.3.3",
     "next": "latest",
