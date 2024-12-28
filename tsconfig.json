@@ -19,7 +19,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "types": ["node", "express"] 
   },
 
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
