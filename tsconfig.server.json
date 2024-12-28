@@ -6,7 +6,13 @@
     "target": "es2017",
     "isolatedModules": false,
     "noEmit": false,
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "express"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["server"]
+  "include": ["server", "common/types/global.d.ts"],
+  "exclude": ["node_modules"]
 }
